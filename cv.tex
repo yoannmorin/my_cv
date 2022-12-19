@@ -1,0 +1,257 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.7in,top=0.7in,right=0.7in,bottom=0.7in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+
+
+
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{xcolor}
+\definecolor{cvlinkcolor}{RGB}{48,48,48}
+\hypersetup{colorlinks,linkcolor=cvlinkcolor,citecolor=cvlinkcolor,urlcolor=cvlinkcolor,bookmarksnumbered,bookmarks=false,pdfinfo={Title={Curriculum Vitae},Author={Lighton Phiri},Creator={Lighton Phiri},Subject={Curriculum Vitae},Keywords={Curriculum Vitae},CreationDate={D:20150513232724}}}
+\renewcommand\labelenumi{[\theenumi]}
+
+\date{}
+
+\usepackage{float}
+
+\pagestyle{plain}
+
+\begin{document}
+
+
+%----------------------------------------------------------------------------------------
+%	Header
+%----------------------------------------------------------------------------------------
+\begin{center}
+{\LARGE \textbf{Yoann Morin}}
+\end{center}
+\vspace*{5mm}
+\begin{table}[h]
+%%%\centering
+{\def\arraystretch{1.2}\tabcolsep=0pt
+\begin{tabular}{p{0.60\linewidth}p{0.05\linewidth}p{0.35\linewidth}}
+  
+  CESAER & \multicolumn{1}{r}{Email:\;\;} & \multicolumn{1}{l}{yoann.morin@protonmail.com} \\
+  
+  26 bd Docteur Petitjean, BP 87999 & \multicolumn{1}{r}{Personal Page:\;\;} &\multicolumn{1}{l}{\href{http://YoannMorin.gitlab.io}{YoannMorin.github.io}} \\
+  
+  21079 Dijon Cedex, France& \multicolumn{1}{r}{Date of Birth:\;\;} & \multicolumn{1}{l}{{24 October 1990 (France)}} \\
+  
+  & \multicolumn{1}{r}{ } & \multicolumn{1}{l}{ } \\
+
+\end{tabular}%
+}
+\end{table}
+%----------------------------------------------------------------------------------------
+%	Research Interests
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Research Interests}
+\begin{table}[H]
+%%%\centering
+{\def\arraystretch{1.5}\tabcolsep=0pt
+\begin{tabular}{p{0.15\linewidth}p{0.75\linewidth}}
+Themes &  Regional Economics, Urban Economics, Development Economics, Labour Economics, Human Capital \\
+Methods &  Econometrics, Spatial econometrics, Causal inference \\
+\end{tabular}%
+}
+\end{table}
+\end{rSection}
+\vspace*{-7mm}
+%----------------------------------------------------------------------------------------
+%	CURRENT POSITION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Current Position}
+\begin{table}[H]
+%%%\centering
+{\def\arraystretch{1.5}\tabcolsep=0pt
+\begin{tabular}{p{0.15\linewidth}p{0.75\linewidth}}
+
+  \multirow{2}{*}[0.85em]{2022-} & Postdoctoral researcher (CESAER UMR 1041,
+INRAE, Institut Agro, Université de Bourgogne Franche-Comté, Dijon, France) \\
+  
+\end{tabular}%
+}
+\end{table}
+\end{rSection}
+\vspace*{-7mm}
+%----------------------------------------------------------------------------------------
+%	PAST POSITIONS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Past Positions}
+\begin{table}[H]
+%%%\centering
+{\def\arraystretch{1.5}\tabcolsep=0pt
+\begin{tabular}{p{0.15\linewidth}p{0.75\linewidth}}
+
+  \multirow{2}{*}[0.85em]{2020-2022} & Temporary research and teaching assistant (Université Clermont Auvergne) \\
+  \multirow{2}{*}[0.85em]{2016-2019} & PhD student, full Research Grant (Ministery of Higher Education) (CESAER UMR 1041, INRAE, Institut Agro, Université de Bourgogne Franche-Comté, Dijon, France) \\
+\end{tabular}%
+}
+\end{table}
+\end{rSection}
+\vspace*{-7mm}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+\begin{table}[H]
+%%%\centering
+{\def\arraystretch{1.5}\tabcolsep=0pt
+\begin{tabular}{p{0.15\linewidth}p{0.75\linewidth}}
+
+  \multirow{2}{*}[0.85em]{2016 - 2021} & PhD in Economics, CESAER (Dijon, France) \\
+  
+  & \footnotesize{PhD Thesis subject: "Firms-Sponsored Training and Agglomeration Externalities"} \\
+  & \footnotesize{Supervisors: Cécile Détang-Dessendre and Lionel Védrine} \\
+  
+  2016 & Master's Degree in Economics and Territorial Governance (University of Burgundy, Dijon, France)\\
+  & \footnotesize{Master Thesis subject : "Human capital externalities, migrations and spatial interactions : an application to regional convergence"} \\
+  & \footnotesize{Supervisor: Lionel Védrine} \\
+
+  2013 &  Degree in Economics (University of Burgundy, Dijon, France) \\
+  
+  2009 & Baccalauréat in Economics and Social Sciences (Lycée Anna-judic, Semur-en-Auxois, France)
+
+\end{tabular}%
+}
+\end{table}
+\end{rSection}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Teaching
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Teaching}
+\begin{table}[H]
+%%%\centering
+{\def\arraystretch{1.5}\tabcolsep=0pt
+\begin{tabular}{p{0.15\linewidth}p{0.75\linewidth}}
+2018 &  Teacher in Statistics Applied to Human and Social Sciences, Sciences Po Paris, Campus de Dijon (45h)\\
+2017-2020 &  Teaching assistant in Spatial Econometrics, Ecole d'économie, Université Clermont Auvergne (27h)\\
+2020 - 2022 & Teacher in Macroeconomics, Université Clermont Auvergne (169h)\\
+2020 - 2022 & Teaching assistant in Introduction to Economics, Université Clermont Auvergne (160h)\\
+
+2021 - 2022 & Teacher in Labour Economics, Université Clermont Auvergne (52h)\\
+2022 - 2023 &  Teacher in Spatial Econometrics, ENSAI (18h)\\
+\end{tabular}%
+}
+\end{table}
+\end{rSection}
+\vspace*{-7mm}
+%----------------------------------------------------------------------------------------
+%	Peer Reviewed Papers
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Peer Reviewed Papers}
+\vspace*{4mm}
+Do agglomeration economies affect firms’ returns to training? Evidence based on French industrial firms (with Lionel Védrine). 2022. \textit{Papers in Regional Science}
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	WORKING PAPERS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Working Papers}
+\vspace*{4mm}
+How does Local Labour Market Size Shape Firm Training Decisions? Disentangling between poaching and agglomeration economies (with Lionel Védrine).\\
+
+Economic development and CO2 emissions in Sahelian countries (with Oudah Yobom).
+
+Does labour market size affect firm-provided training allocation?\\
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK IN PROGRESS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Work in Progress}
+\vspace*{4mm}
+An evaluation of the rent control policy in Paris (with Marie Breuillé,
+Camille Grivault, Julie Le Gallo and Martin Regnaud).\\
+
+The effects of mining on conflicts in Africa: a counterfactual approach (with Fawzi Djarazemi Yves BANAO).\\
+
+Revisiting the environmental impacts of foreign aid: is foreign aid polluting ? Empirical evidence at the sub-national level (with Sébastien Marchand, Lionel Védrine and Laurent Wagner).\\
+
+Do Spatial Effects Explain Human Capital Returns to Economic Development? (with Lionel Védrine) \\
+  
+\end{rSection}
+
+\newpage
+%----------------------------------------------------------------------------------------
+%	Languages
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Languages}
+French (native), English (professional).
+\vspace*{5mm}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Computer Skills
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Computer Skills}
+\begin{itemize}
+	\item Advanced : R, Python, SAS, LaTex 
+	\item Basic : QGIS, Stata, Matlab 
+\end{itemize}
+\end{rSection}
+
+
+\end{document}
